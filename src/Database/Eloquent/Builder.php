@@ -500,7 +500,17 @@ class Builder
             'pageName' => $pageName,
         ]);
     }
-
+    /**
+     * Set the limit and offset for a given page.
+     *
+     * @param  int  $page
+     * @param  int  $perPage
+     * @return \Illuminate\Database\Query\Builder|static
+     */
+    public function forPage($page, $perPage = 15)
+    {
+        return $this->limit($perPage, ($page - 1) * $perPage);
+    }
     /**
      * Paginate the given query into a simple paginator.
      *
