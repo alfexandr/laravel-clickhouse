@@ -67,7 +67,18 @@ class Builder extends BaseBuilder
 
         return (int) ($result[0]['count'] ?? 0);
     }
-
+    
+    /**
+     * Get the count of the total records for the paginator.
+     *
+     * @param  array  $columns
+     * @return int
+     */
+    public function getCountForPagination($columns = ['*'])
+    {
+        return $this->count($columns[0]);
+    }
+    
     /**
      * Perform query and get first row.
      *
