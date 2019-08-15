@@ -1,17 +1,24 @@
 {
-  "name": "esazykin/laravel-clickhouse",
+  "name": "alfexandr/laravel-clickhouse",
   "type": "library",
   "license": "MIT",
   "keywords": [
     "laravel",
     "clickhouse",
-    "eloquent"
+    "eloquent",
+    "orm"
   ],
   "require": {
     "php": ">=7.1",
     "laravel/framework": ">=5.8",
     "the-tinderbox/clickhouse-builder": "master"
   },
+  "repositories": [
+      {
+          "url": "git@github.com:the-tinderbox/ClickhouseBuilder.git",
+          "type": "git"
+      }
+  ],
   "require-dev": {
     "phpunit/phpunit": "^7.3",
     "mockery/mockery": "^1.1",
