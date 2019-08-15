@@ -11,7 +11,7 @@
   "require": {
     "php": ">=7.1",
     "laravel/framework": ">=5.8",
-    "the-tinderbox/clickhouse-builder": "master"
+    "the-tinderbox/clickhouse-builder": "^1.2"
   },
   "repositories": [
       {
